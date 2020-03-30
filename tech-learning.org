@@ -1,0 +1,2 @@
+# kubernetes
+- [Kubernetes for Sysadmins – Kelsey Hightower at PuppetConf 2016](https://www.youtube.com/watch?v=HlAXp0-M6SY)
