@@ -1,1 +1,2 @@
-- [Logseq Periodic Things][logseq://graph/logseq?page=periodic%20things%20I%20do]
+* [[logseq://graph/logseq?page=periodic%20things%20I%20do][Logseq Periodic Things]]
+  
