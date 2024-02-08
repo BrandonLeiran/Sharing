@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Links</title>
+    <style>
+        body {
+            background-color: #333; /* Dark background */
+            color: #ccc; /* Lighter text */
+            font-family: Arial, sans-serif;
+        }
+
+        .link-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px 40px; /* Larger padding for bigger buttons */
+            background-color: #555; /* Darker button background */
+            color: #ddd; /* Light text on buttons */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px; /* Larger font size */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+
+        .link-button:hover {
+            background-color: #777; /* Slightly lighter on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Links</h1>
+    <div id="links-container"></div>
+
+    <script>
+        const links = [
+            // Add your URL and name pairs here. Example format:
+            { url: "logseq://graph/logseq?page=periodic%20things%20I%20do", name: "Logseq: Periodic Things" },
+        ];
+
+        const container = document.getElementById('links-container');
+
+        links.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.url;
+            a.textContent = link.name;
+            a.className = 'link-button';
+            container.appendChild(a);
+        });
+    </script>
+</body>
+</html>
